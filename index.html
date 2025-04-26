@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Bankist APP</title>
+  </head>
+  <body>
+    <nav class="header">
+      <h3 class="message">Log in to get started</h3>
+      <img src="logo.png" alt="" align="center" />
+      <form class="login">
+        <input type="text" placeholder="user" class="user" />
+        <input type="text" placeholder="PIN" maxlength="4" class="pin" />
+        <button class="login__btn">→</button>
+      </form>
+    </nav>
+    <div class="applicant">
+      <div class="APP__head">
+        <div class="bigdate">
+          <h2>Cuurent balance</h2>
+          <div class="date"></div>
+        </div>
+        <h1 class="balance">0000$</h1>
+      </div>
+      <div class="APP">
+        <div class="move"></div>
+
+        <div class="operations">
+          <div class="tranfer">
+            <h2 class="head2">Transfer money</h2>
+
+            <input class="transferTo" type="text" placeholder="Transfet To" />
+
+            <input
+              type="text"
+              class="transfer__amount"
+              type="text"
+              placeholder="Amount"
+            />
+            <button class="transfer__btn">→</button>
+          </div>
+          <div class="request">
+            <h2 class="head4">Request loan</h2>
+            <input type="text" class="loan__amount" placeholder="Amount" />
+
+            <button class="loan__btn">→</button>
+          </div>
+          <div class="close">
+            <h2 class="head4">Close account</h2>
+            <input
+              type="text"
+              class="confrim_close_user"
+              placeholder="Confirm user"
+            />
+            <input
+              type="text"
+              class="confrim_close_PIN"
+              placeholder="Confirm PIN"
+            />
+            <button class="close__btn">→</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          IN &nbsp;<span class="in">0000$</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OUT &nbsp;<span class="out">0000$</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interest &nbsp;
+          <span class="inter">0000$</span>
+        </p>
+        <button class="btn__sort">↓ SORT</button>
+        <div class="close__time">
+          <p>the account will be closed in</p>
+          <div class="timer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

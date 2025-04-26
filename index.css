@@ -1,0 +1,212 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: inherit;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem;
+}
+img {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.user,
+.pin {
+  width: 104px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  padding: 5px;
+  height: 23px;
+  color: black;
+}
+.login__btn {
+  border: none;
+  margin-left: 6px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.APP {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 7px;
+}
+.move {
+  width: 50%;
+  max-height: 580px;
+  overflow: scroll;
+  display: grid;
+}
+.operations {
+  width: 50%;
+}
+.operations div {
+  width: 70%;
+  margin: auto;
+  height: 120px;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.tranfer {
+  background-color: rgb(253, 199, 51);
+}
+.request {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(158, 255, 128),
+    rgb(44, 167, 44)
+  );
+}
+.close {
+  background-color: rgb(226, 62, 89);
+}
+.operations div input {
+  width: 30%;
+  border: none;
+  height: 25px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.329);
+}
+.tranfer h2,
+.request h2,
+.close h2 {
+  margin-bottom: 35px;
+}
+.movements__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  border-bottom: 1px solid #746e6e;
+  height: 60px;
+}
+.applicant {
+  display: grid;
+  row-gap: 10px;
+  width: 80%;
+  margin: auto;
+  opacity: 0;
+  transition-duration: 1s;
+}
+.APP__head {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+  align-items: center;
+}
+.movement__type--deposit {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(158, 255, 128),
+    rgb(44, 167, 44)
+  );
+}
+.movement__type--withdraw {
+  background-color: rgb(226, 62, 89);
+}
+.movement__type {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+}
+.movement__value {
+  font-size: 1.7rem;
+  margin-left: auto;
+}
+.footer {
+  height: 40px;
+  position: relative;
+  bottom: 0px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  align-items: center;
+}
+p {
+  font-size: 10px;
+}
+span {
+  font-size: 25px;
+}
+.in {
+  color: rgb(44, 167, 44);
+}
+.out {
+  color: rgb(226, 62, 89);
+}
+.inter {
+  color: rgb(44, 167, 44);
+}
+.close__time p {
+  font-size: 18px;
+}
+input {
+  text-align: center;
+  transition-duration: 0.3s;
+  color: black;
+}
+input:focus {
+  outline: none;
+  border: 0.5px solid rgba(138, 132, 132, 0.493);
+}
+.APP__head h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.btn__sort {
+  border: none;
+}
+
+.transfer__btn,
+.loan__btn,
+.close__btn {
+  padding: 5px;
+  border: none;
+  width: 30px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.operations div input::placeholder {
+  opacity: 100;
+  color: #4d1e1e;
+}
+.logout-timer {
+  padding: 0 0.3rem;
+  margin-top: 1.9rem;
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+.timer {
+  font-weight: 600;
+}
+.date {
+  font-weight: 500;
+}
+.bigdate {
+  display: grid;
+}
+.close__time {
+  display: flex;
+  column-gap: 9px;
+  align-items: center;
+}
