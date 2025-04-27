@@ -223,7 +223,10 @@ row_login.addEventListener("click", function (e) {
     //show movements
     displayMovements(currentuser.movements);
     inter.textContent = `${interest.toFixed(2)}$`;
+<<<<<<< HEAD
     labelTimer.textContent = `${startLogOutTimer()}`;
+=======
+>>>>>>> 717197a4fdebb0e20819f92ce38d96cb97a1d81d
   }
 });
 
