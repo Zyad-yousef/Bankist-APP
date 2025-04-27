@@ -170,7 +170,6 @@ const displayMovements = function (movements, sort = false) {
 
     containerMovements.insertAdjacentHTML("afterbegin", html);
   });
-  labelTimer.textContent = `${startLogOutTimer()}`;
 };
 
 //-------------------add operation-----------------------
@@ -223,7 +222,8 @@ row_login.addEventListener("click", function (e) {
     balance_label.textContent = `${calacBalance(currentuser)}$`;
     //show movements
     displayMovements(currentuser.movements);
-    inter.textContent = `${interest}$`;
+    inter.textContent = `${interest.toFixed(2)}$`;
+    labelTimer.textContent = `${startLogOutTimer()}`;
   }
 });
 
@@ -241,7 +241,7 @@ close__btn.addEventListener("click", function (e) {
     accounts.splice(index, 1);
     applicant.style.opacity = 0;
   }
-  confrim_close_PIN = confrim_close_user = "";
+  confrim_close_PIN.value = confrim_close_user.value = "";
 });
 
 //------------loan-------------
@@ -260,7 +260,7 @@ loan__btn.addEventListener("click", function (e) {
     displayMovements(currentuser.movements);
     cash__In.textContent = `${calacSummary(currentuser.movements)}$`;
     balance_label.textContent = `${calacBalance(currentuser)}$`;
-    inter.textContent = `${interest}$`;
+    inter.textContent = `${interest.toFixed(2)}$`;
   }
 
   loan__amount.value = "";
@@ -282,7 +282,7 @@ transfer__btn.addEventListener("click", function (e) {
       .map((mov) => mov * (currentuser.interstRate / 100))
       .filter((int) => int > 1)
       .reduce((acc, cur) => acc + cur, 0);
-    inter.textContent = `${interest}$`;
+    inter.textContent = `${interest.toFixed(2)}$`;
 
     currentuser.movements.push(-trans_amount);
     trns_name.movements.push(trans_amount);
